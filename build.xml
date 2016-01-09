@@ -47,7 +47,6 @@
   <delete dir="${basedir}/build/coverage"/>
   <delete dir="${basedir}/build/logs"/>
   <delete dir="${basedir}/build/pdepend"/>
-  <delete dir="${basedir}/build/cs"/>
   <!-- <delete dir="${basedir}/build/phpdox"/>-->
   <property name="clean.done" value="true"/>
  </target>
@@ -60,7 +59,6 @@
   <mkdir dir="${basedir}/build/coverage"/>
   <mkdir dir="${basedir}/build/logs"/>
   <mkdir dir="${basedir}/build/pdepend"/>
-  <mkdir dir="${basedir}/build/cs"/>
   <!-- <mkdir dir="${basedir}/build/phpdox"/>-->
   <property name="prepare.done" value="true"/>
  </target>
@@ -173,7 +171,7 @@
          unless="phpcs.done"
          depends="prepare"
          description="Find coding standard violations using PHP_CodeSniffer and log result in XML format. Intended for usage within a continuous integration environment.">
-  <exec executable="${phpcs}" output="${basedir}/build/cs" taskname="phpcs">
+   <exec executable="${phpcs}" taskname="phpcs">
    <arg value="--report=checkstyle" />
    <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
    <arg value="--standard=PSR2" />
