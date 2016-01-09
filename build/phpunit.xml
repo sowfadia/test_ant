@@ -2,6 +2,6 @@
   <testsuites>
     <testsuite name="test">
       <directory>../tests</directory>
-    </testsuite>
+    </testsuite>;,;cskldfnlfnslfslkfslkfsklfjsl
   </testsuites>
 </phpunit>
