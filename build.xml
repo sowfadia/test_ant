@@ -160,7 +160,6 @@
    <arg value="--standard=PSR2" />
    <arg value="--extensions=php" />
    <arg value="--ignore=autoload.php" />
-   <arg value="--report-file=${basedir}/build/cs/cs.xml" />
    <arg path="${basedir}/src" />
    <arg path="${basedir}/tests" />
   </exec>
