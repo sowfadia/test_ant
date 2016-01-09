@@ -4,7 +4,6 @@
          backupStaticAttributes="false"
          strict="true"
          verbose="true">
-  sdddddddddddddddddddddddssddddsdsdssdsddssddssddsdssdsdsdsdsd     
   <testsuites>
     <testsuite name="ProjectName">
       <directory suffix="Test.php">tests/unit/</directory>
@@ -18,7 +17,6 @@
     <log type="coverage-crap4j" target="build/logs/crap4j.xml"/>
     <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
   </logging>
-dfdfdfdfddf
   <filter>
     <whitelist addUncoveredFilesFromWhitelist="true">
       <directory suffix=".php">src</directory>
