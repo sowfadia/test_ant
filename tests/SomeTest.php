@@ -122,14 +122,6 @@ class PhpUnderControl_Example_MathTest extends PHPUnit_Framework_TestCase
     }
     
     /**
-     * Skipping test.
-     */
-    public function testMarkIncomplete()
-    {
-        $this->markTestIncomplete('Incomplete because...');
-    }
-    
-    /**
      * Example data provider.
      *
      * @return array(array)
