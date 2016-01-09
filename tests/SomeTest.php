@@ -114,14 +114,6 @@ class PhpUnderControl_Example_MathTest extends PHPUnit_Framework_TestCase
     }
     
     /**
-     * Failing test.
-     */
-    public function testFail()
-    {
-        $this->fail('Failed because...');
-    }
-    
-    /**
      * Skipping test.
      */
     public function testMarkSkip()
