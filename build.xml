@@ -212,9 +212,12 @@
          depends="prepare"
          description="Run unit tests with PHPUnit">
   <exec executable="${phpunit}" dir="${basedir}/tests" resultproperty="result.phpunit" taskname="phpunit">
-   <arg value="--coverage-clover" target="build/logs/clover.xml"/>
-   <arg value="--coverage-crap4j"/>
-   <arg value="--coverage-html"/>
+   <logging>
+    <log type="coverage-html" target="build/coverage"/>
+    <log type="coverage-clover" target="build/logs/clover.xml"/>
+    <log type="coverage-crap4j" target="build/logs/crap4j.xml"/>
+    <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
+  </logging>
   </exec>
 
   <property name="phpunit.done" value="true"/>
