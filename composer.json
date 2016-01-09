@@ -22,7 +22,6 @@
 		"pdepend/pdepend": "~2.0",
 		"phploc/phploc": "~2.1",
 		"phpmd/phpmd": "@stable",
-		"theseer/phpdox": "*", 
 		"squizlabs/php_codesniffer": "*",
         "sebastian/phpcpd": "^2.0"
 
