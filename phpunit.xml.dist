@@ -20,7 +20,7 @@
   </logging>
 
   <filter>
-    <whitelist addUncoveredFilesFromWhitelist="true">
+    <whitelist addUncoveredFilesFromWhitelist="true"><>
       <directory suffix=".php">src</directory>
       <exclude>
         <file>tests/bootstrap.php</file>
