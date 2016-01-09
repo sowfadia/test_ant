@@ -215,7 +215,7 @@
     <arg value="--coverage-clover" file="build/logs/clover.xml"/>
     <arg value="--coverage-crap4j" file="build/logs/crap4j.xml"/>
     <arg value="--junit" file="build/logs/junit.xml" />
-    <arg value="--coverage-html" dir="build/coverage"/>
+    <arg value="--coverage-html" path="build/coverage"/>
   </exec>
 
   <property name="phpunit.done" value="true"/>
