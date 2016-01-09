@@ -211,11 +211,9 @@
          unless="phpunit.done"
          depends="prepare"
          description="Run unit tests with PHPUnit">
-  <exec executable="${phpunit}" dir="${basedir}/tests" resultproperty="result.phpunit" taskname="phpunit">
-    <arg value="--coverage-clover:build/logs/clover.xml"/>
-    <arg value="--coverage-crap4j build/logs/crap4j.xml" />
-    <arg value="--junit build/logs/junit.xml"/>
-    <arg value="--coverage-html build/coverage" />
+  <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
+    <arg value="--configuration"/>
+   <arg path="${basedir}/build/phpunit.xml"/>
   </exec>
 
   <property name="phpunit.done" value="true"/>
