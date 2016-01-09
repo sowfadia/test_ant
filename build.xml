@@ -212,7 +212,9 @@
          depends="prepare"
          description="Run unit tests with PHPUnit">
   <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
-   <arg value="--configuration"/>
+   <arg line="--coverage-clover=build/logs/phpunit-clover.xml"/>
+   <arg line="--coverage-crap4j=build/logs/phpunit-crap4j.xml"/>
+   <arg line="--coverage-html=build/coverage"/>
    <arg path="${basedir}/build/phpunit.xml"/>
   </exec>
 
